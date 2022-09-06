@@ -28,6 +28,7 @@
 		F55934D628BF565F0043B1CD /* WorkoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WorkoutsViewController.swift; path = Controller/WorkoutsViewController.swift; sourceTree = "<group>"; };
 		F5B5DA2D28C695880092FD19 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataModel.swift; path = Model/DataModel.swift; sourceTree = "<group>"; };
 		F5B5DA2F28C695C50092FD19 /* WorkoutsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkoutsListViewController.swift; path = Controller/WorkoutsListViewController.swift; sourceTree = "<group>"; };
+		F5B5DA3328C7F51C0092FD19 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +45,7 @@
 		F559347728BE455D0043B1CD = {
 			isa = PBXGroup;
 			children = (
+				F5B5DA3328C7F51C0092FD19 /* README.md */,
 				F559348228BE455D0043B1CD /* My Workout App */,
 				F559348128BE455D0043B1CD /* Products */,
 			);
