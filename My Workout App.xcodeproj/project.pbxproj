@@ -12,13 +12,9 @@
 		F559348B28BE455D0043B1CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F559348928BE455D0043B1CD /* Main.storyboard */; };
 		F559348D28BE455E0043B1CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F559348C28BE455E0043B1CD /* Assets.xcassets */; };
 		F559349028BE455E0043B1CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F559348E28BE455E0043B1CD /* LaunchScreen.storyboard */; };
-		F55934D728BF565F0043B1CD /* FridayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55934D528BF565F0043B1CD /* FridayViewController.swift */; };
-		F55934D928BF565F0043B1CD /* MondayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55934D328BF565E0043B1CD /* MondayViewController.swift */; };
-		F55934DA28BF565F0043B1CD /* WednesdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55934D628BF565F0043B1CD /* WednesdayViewController.swift */; };
-		F5B5DA2C28C695300092FD19 /* MondayListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B5DA2B28C695300092FD19 /* MondayListViewController.swift */; };
+		F55934DA28BF565F0043B1CD /* WorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55934D628BF565F0043B1CD /* WorkoutsViewController.swift */; };
 		F5B5DA2E28C695880092FD19 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B5DA2D28C695880092FD19 /* DataModel.swift */; };
-		F5B5DA3028C695C50092FD19 /* WednesdayListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B5DA2F28C695C50092FD19 /* WednesdayListViewController.swift */; };
-		F5B5DA3228C695D20092FD19 /* FridayListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B5DA3128C695D20092FD19 /* FridayListViewController.swift */; };
+		F5B5DA3028C695C50092FD19 /* WorkoutsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B5DA2F28C695C50092FD19 /* WorkoutsListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,13 +25,9 @@
 		F559348C28BE455E0043B1CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F559348F28BE455E0043B1CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F559349128BE455E0043B1CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F55934D328BF565E0043B1CD /* MondayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MondayViewController.swift; path = Controller/MondayViewController.swift; sourceTree = "<group>"; };
-		F55934D528BF565F0043B1CD /* FridayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FridayViewController.swift; path = Controller/FridayViewController.swift; sourceTree = "<group>"; };
-		F55934D628BF565F0043B1CD /* WednesdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WednesdayViewController.swift; path = Controller/WednesdayViewController.swift; sourceTree = "<group>"; };
-		F5B5DA2B28C695300092FD19 /* MondayListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MondayListViewController.swift; path = Controller/MondayListViewController.swift; sourceTree = "<group>"; };
+		F55934D628BF565F0043B1CD /* WorkoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WorkoutsViewController.swift; path = Controller/WorkoutsViewController.swift; sourceTree = "<group>"; };
 		F5B5DA2D28C695880092FD19 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataModel.swift; path = Model/DataModel.swift; sourceTree = "<group>"; };
-		F5B5DA2F28C695C50092FD19 /* WednesdayListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WednesdayListViewController.swift; path = Controller/WednesdayListViewController.swift; sourceTree = "<group>"; };
-		F5B5DA3128C695D20092FD19 /* FridayListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FridayListViewController.swift; path = Controller/FridayListViewController.swift; sourceTree = "<group>"; };
+		F5B5DA2F28C695C50092FD19 /* WorkoutsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkoutsListViewController.swift; path = Controller/WorkoutsListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,12 +83,8 @@
 		F55934DB28BF655D0043B1CD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				F5B5DA3128C695D20092FD19 /* FridayListViewController.swift */,
-				F5B5DA2F28C695C50092FD19 /* WednesdayListViewController.swift */,
-				F5B5DA2B28C695300092FD19 /* MondayListViewController.swift */,
-				F55934D528BF565F0043B1CD /* FridayViewController.swift */,
-				F55934D328BF565E0043B1CD /* MondayViewController.swift */,
-				F55934D628BF565F0043B1CD /* WednesdayViewController.swift */,
+				F5B5DA2F28C695C50092FD19 /* WorkoutsListViewController.swift */,
+				F55934D628BF565F0043B1CD /* WorkoutsViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -180,14 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5B5DA2C28C695300092FD19 /* MondayListViewController.swift in Sources */,
-				F55934D928BF565F0043B1CD /* MondayViewController.swift in Sources */,
 				F559348428BE455D0043B1CD /* AppDelegate.swift in Sources */,
-				F5B5DA3228C695D20092FD19 /* FridayListViewController.swift in Sources */,
 				F559348628BE455D0043B1CD /* SceneDelegate.swift in Sources */,
-				F55934DA28BF565F0043B1CD /* WednesdayViewController.swift in Sources */,
-				F55934D728BF565F0043B1CD /* FridayViewController.swift in Sources */,
-				F5B5DA3028C695C50092FD19 /* WednesdayListViewController.swift in Sources */,
+				F55934DA28BF565F0043B1CD /* WorkoutsViewController.swift in Sources */,
+				F5B5DA3028C695C50092FD19 /* WorkoutsListViewController.swift in Sources */,
 				F5B5DA2E28C695880092FD19 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

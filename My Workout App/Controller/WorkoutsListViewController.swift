@@ -1,5 +1,5 @@
 //
-//  MondayListViewController.swift
+//  WednesdayListViewController.swift
 //  My Workout App
 //
 //  Created by Kamil Caglar on 03/09/2022.
@@ -7,8 +7,8 @@
 
 import UIKit
 
-class MondayListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+class WorkoutsListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
     private let tableView: UITableView = {
         let table = UITableView()
         table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
@@ -33,6 +33,7 @@ class MondayListViewController: UIViewController, UITableViewDelegate, UITableVi
         view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
+        
     }
     
     override func viewDidLayoutSubviews() {
@@ -41,18 +42,19 @@ class MondayListViewController: UIViewController, UITableViewDelegate, UITableVi
         tableView.frame = view.bounds
     }
     
-    
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
-    
+//    
 //    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
 //        
 //        let deleteAction = UITableViewRowAction(style: .destructive, title: "Delete") { _, indexPath in
+//            //self.data.remove(at: indexPath.row)
 //            self.items.remove(at: indexPath.row)
 //            self.tableView.deleteRows(at: [indexPath], with: .automatic)
 //        }
 //        return [deleteAction]
+//        
 //    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -69,15 +71,6 @@ class MondayListViewController: UIViewController, UITableViewDelegate, UITableVi
         print(items[indexPath.row])
     }
     
-    func tableView(_ tableView: UITableView,commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath){
-        if editingStyle == .delete{
-            tableView.beginUpdates()
-            items.remove(at: indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
-            tableView.endUpdates()
-        }
-    }
-
     /*
     // MARK: - Navigation
 

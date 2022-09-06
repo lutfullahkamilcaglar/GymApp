@@ -27,11 +27,11 @@
             </objects>
             <point key="canvasLocation" x="460" y="-1055"/>
         </scene>
-        <!--Monday-->
+        <!--Profile-->
         <scene sceneID="SNa-iW-Wmy">
             <objects>
                 <navigationController id="tDC-u5-mxg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Monday" id="r5t-0z-J4M"/>
+                    <tabBarItem key="tabBarItem" title="Profile" id="r5t-0z-J4M"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vAI-OS-ykW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -44,11 +44,30 @@
             </objects>
             <point key="canvasLocation" x="-172" y="-113"/>
         </scene>
-        <!--Monday Workouts-->
+        <!--Profile-->
         <scene sceneID="39z-4y-5SQ">
             <objects>
-                <viewController id="fhj-KL-e9M" customClass="MondayViewController" customModule="My_Workout_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fhj-KL-e9M" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YUH-E5-YSX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="YQc-I1-Go0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="KFL-0I-DFr"/>
+                    <connections>
+                        <outlet property="tableView" destination="GaU-63-ROI" id="6Ag-N8-Blz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1eX-z1-Vg7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-172" y="707.49625187406298"/>
+        </scene>
+        <!--Workouts-->
+        <scene sceneID="F4P-W6-Sdk">
+            <objects>
+                <viewController id="es3-JZ-GzU" customClass="WorkoutsViewController" customModule="My_Workout_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dk2-Nz-pPp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -68,55 +87,39 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="YQc-I1-Go0"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Monday Workouts" id="KFL-0I-DFr"/>
-                    <connections>
-                        <outlet property="tableView" destination="GaU-63-ROI" id="6Ag-N8-Blz"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1eX-z1-Vg7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-172" y="707.49625187406298"/>
-        </scene>
-        <!--Wednesday Workouts-->
-        <scene sceneID="F4P-W6-Sdk">
-            <objects>
-                <viewController id="es3-JZ-GzU" customClass="WednesdayViewController" customModule="My_Workout_App" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dk2-Nz-pPp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="5QU-y5-Fnc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Wednesday Workouts" id="Xdb-ZU-z97"/>
+                    <navigationItem key="navigationItem" title="Workouts" id="Xdb-ZU-z97"/>
+                    <connections>
+                        <outlet property="tableView" destination="GaU-63-ROI" id="bei-4T-6w9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="59Y-Vf-8d3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="460" y="710"/>
         </scene>
-        <!--Friday Workouts-->
+        <!--History-->
         <scene sceneID="LGh-hW-9ud">
             <objects>
-                <viewController id="HFH-yd-QaC" customClass="FridayViewController" customModule="My_Workout_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HFH-yd-QaC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QBJ-v2-Vla">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="qL6-1M-QiW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Friday Workouts" id="H3C-ul-wGG"/>
+                    <navigationItem key="navigationItem" title="History" id="H3C-ul-wGG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QyC-6i-f3N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1089" y="709"/>
         </scene>
-        <!--Friday-->
+        <!--History-->
         <scene sceneID="VyA-zH-dYR">
             <objects>
                 <navigationController id="CPi-0p-VtI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Friday" id="SQ7-W8-2nY"/>
+                    <tabBarItem key="tabBarItem" title="History" id="SQ7-W8-2nY"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qjA-RV-IHR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -129,11 +132,11 @@
             </objects>
             <point key="canvasLocation" x="1089" y="-114"/>
         </scene>
-        <!--Wednesday-->
+        <!--Workouts-->
         <scene sceneID="eJ4-u3-DXU">
             <objects>
                 <navigationController id="DGg-41-DSK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Wednesday" id="Y03-Gm-5La"/>
+                    <tabBarItem key="tabBarItem" title="Workouts" id="Y03-Gm-5La"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bQO-jy-g3J">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
