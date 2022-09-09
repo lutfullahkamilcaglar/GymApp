@@ -7,13 +7,4 @@
 
 import Foundation
 
-struct Category {
-    
-    let title: String
-    let items: [String]
-    
-    init(title: String, items: [String]){
-        self.title = title
-        self.items = items
-    }
-}
+
