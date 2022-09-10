@@ -15,4 +15,13 @@ Currently I'm creating an application that you can manage your workouts
  - Add feature that history tab bar can show history for exercises
  
  '''
+ 
+ 
+ # Current Look
+ ''' Workouts bar view '''
+ 
+ ![screenshot1](https://user-images.githubusercontent.com/73592197/189483763-6ac9d47a-edc8-41fb-b164-d95545fc83b5.png)
+ 
+ ''' Exercises tableView '''
+![screenshot2](https://user-images.githubusercontent.com/73592197/189483772-d290f5f5-57b9-44a7-ab6f-26510492fd00.png)
 

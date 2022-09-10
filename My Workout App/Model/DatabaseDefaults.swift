@@ -15,16 +15,17 @@ let legExcercises: [ExcerciseModel] = [
     ),
     ExcerciseModel(
         title: "Seated Leg Extension",
-        image: "legpress"
-    ),
-    ExcerciseModel(
-        title: "Seated Hamstring Curl",
-        image: "legpress"
+        image: "seatedlegextension"
     ),
     ExcerciseModel(
         title: "Calf Raises",
-        image: "legpress"
+        image: "calfraise"
+    ),
+    ExcerciseModel(
+        title: "Seated Hamstring Curl",
+        image: "seatedhamstringcurl"
     )
+
 ]
 
 let trapExercises: [ExcerciseModel] = [
