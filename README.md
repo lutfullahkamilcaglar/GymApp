@@ -1,27 +1,24 @@
-#  Gym App 
+## Project: Workout
 
-Currently I'm creating an application that you can manage your workouts
+## Description:
+Workout is an iOS application that shows different types of exercises for specific workouts. The application utilizes TableView and TabBar for easy navigation and displaying the exercises. the application follows the MVC pattern for code organization and ease of use.
 
-# To Do's
+Technologies Used:
 
-'''
+- [x] CoreData: Used to save exercises to display in another view.
+- [x] TableView: for displaying the exercises in an organized and easy to read format.
+- [x] TabBar: for easy navigation between different sections of the application.
+- [x] MVC pattern: Used to organize the code and separate the concerns of the application.
 
- - Change The tab bar controller /Done
- - Add Images to the exercises list view/ Kind of done!
- - Add delete button for exercises 
- - Add create exercises section
- - Add coredata for exercises
- - Add chart for profile tab bar
- - Add feature that history tab bar can show history for exercises
- 
- '''
- 
- 
+## Key Features:
+
+Showing different types of exercises for specific workouts.
+Easy navigation using TabBar.
+Organized display of exercises using TableView.
+Code organization using MVC pattern.
+
  # Current Look
- ''' Workouts bar view and workouts tableView to exercises tableView'''
  
- <img src="https://user-images.githubusercontent.com/73592197/189483763-6ac9d47a-edc8-41fb-b164-d95545fc83b5.png" width="250" height="500" /><img src="https://user-images.githubusercontent.com/73592197/189483772-d290f5f5-57b9-44a7-ab6f-26510492fd00.png" width="250" height="500" /> 
- 
- 
- 
+https://user-images.githubusercontent.com/73592197/213555576-da7cbec1-5f75-41dd-9c71-8379390c7c9c.mp4
+
 

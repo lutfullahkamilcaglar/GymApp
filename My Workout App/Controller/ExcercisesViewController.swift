@@ -6,21 +6,24 @@
 //
 
 import UIKit
+import CoreData
 
 class ExcercisesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     @IBOutlet weak var tableView: UITableView!
     
+    // Data for table
     var excercises: [ExcerciseModel] = []
-   
+    var workoutExercises: [Exercises] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
         view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
+        
     }
-    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         tableView.frame = view.bounds
@@ -45,6 +48,37 @@ class ExcercisesViewController: UIViewController, UITableViewDelegate, UITableVi
         cell.exerciseImageView.image = UIImage(named: excercise.image)
 
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        // Swipe left to add exercises to MyPlan
+        
+        let add = UIContextualAction(style: .normal , title: "Add") {(action, view, completionHandler) in
+            let index = indexPath.row
+            let excercise = self.excercises[index]
+            // save exercises in row
+            let exercise = DataManager.shared.exercise(title: excercise.title, image: excercise.image)
+            self.workoutExercises.append(exercise)
+            DataManager.shared.save()
+            completionHandler(true)
+        }
+        add.image = UIImage(systemName: "plus.circle")
+        add.backgroundColor = UIColor(named: "swipeColor")
+        
+        // swipe
+        let swipe = UISwipeActionsConfiguration(actions: [add])
+        
+        return swipe
+    }
+    
+    func addButton(indexPath: IndexPath) {
+        let index = indexPath.row
+        let excercise = self.excercises[index]
+        // save exercises in row
+        let exercise = DataManager.shared.exercise(title: excercise.title, image: excercise.image)
+        self.workoutExercises.append(exercise)
+        tableView.reloadData()
+        DataManager.shared.save()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

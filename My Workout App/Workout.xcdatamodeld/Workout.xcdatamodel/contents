@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22C65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Exercises" representedClassName="Exercises" syncable="YES" codeGenerationType="class">
+        <attribute name="image" attributeType="String"/>
+        <attribute name="title" attributeType="String"/>
+    </entity>
+</model>

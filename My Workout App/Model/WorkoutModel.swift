@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct WorkoutModel {
     let title: String
     let image: String
@@ -19,4 +18,5 @@ struct WorkoutModel {
         self.excercises = excercises
     }
 }
+
 

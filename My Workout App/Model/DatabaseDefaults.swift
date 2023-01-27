@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 let legExcercises: [ExcerciseModel] = [
     ExcerciseModel(
         title: "Leg Press",
@@ -175,6 +174,3 @@ let workouts: [WorkoutModel] = [
         image: "chestexercises",
         excercises: chestExercises)
 ]
-
-
-

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YmQ-dK-5L1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YmQ-dK-5L1">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -31,7 +32,7 @@
         <scene sceneID="SNa-iW-Wmy">
             <objects>
                 <navigationController id="tDC-u5-mxg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" id="r5t-0z-J4M"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="r5t-0z-J4M"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vAI-OS-ykW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -73,7 +74,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="96" id="st1-Z8-8ui" customClass="WorkoutTableViewCell" customModule="My_Workout_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="375" height="96"/>
+                                        <rect key="frame" x="0.0" y="50" width="375" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="st1-Z8-8ui" id="LHN-HH-znI">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
@@ -132,7 +133,7 @@
         <!--Excercises View Controller-->
         <scene sceneID="ZRU-f9-8y3">
             <objects>
-                <viewController id="ejc-iE-slR" customClass="ExcercisesViewController" customModule="My_Workout_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="cell" id="ejc-iE-slR" customClass="ExcercisesViewController" customModule="My_Workout_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iwW-3i-GHt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -142,7 +143,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="96" id="HNe-uX-lhL" customClass="ExerciseTableViewCell" customModule="My_Workout_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="375" height="96"/>
+                                        <rect key="frame" x="0.0" y="50" width="375" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HNe-uX-lhL" id="Xoj-bd-PAf">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
@@ -197,27 +198,79 @@
             </objects>
             <point key="canvasLocation" x="460" y="1497"/>
         </scene>
-        <!--History-->
+        <!--My Plan-->
         <scene sceneID="LGh-hW-9ud">
             <objects>
-                <viewController id="HFH-yd-QaC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyPlanTableViewCell" id="HFH-yd-QaC" customClass="MyPlanViewController" customModule="My_Workout_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QBJ-v2-Vla">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="KBv-4J-FPa">
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cell" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="100" id="38s-cg-oYW" userLabel="cell" customClass="MyPlanTableViewCell" customModule="My_Workout_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="38s-cg-oYW" id="7xr-Bt-bHl">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RJW-4I-uMM" userLabel="Exercies Image View">
+                                                    <rect key="frame" x="10" y="10" width="150" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="150" id="Sw2-7r-I8f"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Fx-GN-Nmb">
+                                                    <rect key="frame" x="170" y="21" width="179" height="54"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="RJW-4I-uMM" secondAttribute="bottom" constant="10" id="4iZ-Xx-7BO"/>
+                                                <constraint firstItem="RJW-4I-uMM" firstAttribute="top" secondItem="7xr-Bt-bHl" secondAttribute="top" constant="10" id="DLj-6z-9Q2"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="0Fx-GN-Nmb" secondAttribute="bottom" constant="14" id="SaF-P4-2if"/>
+                                                <constraint firstItem="0Fx-GN-Nmb" firstAttribute="top" secondItem="7xr-Bt-bHl" secondAttribute="topMargin" constant="10" id="Skp-dK-og4"/>
+                                                <constraint firstItem="RJW-4I-uMM" firstAttribute="leading" secondItem="7xr-Bt-bHl" secondAttribute="leading" constant="10" id="Ys6-mt-nS8"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="0Fx-GN-Nmb" secondAttribute="trailing" constant="10" id="gBR-zx-8HY"/>
+                                                <constraint firstItem="0Fx-GN-Nmb" firstAttribute="leading" secondItem="RJW-4I-uMM" secondAttribute="trailing" constant="10" id="jER-H8-d8e"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="exerciseImageView" destination="RJW-4I-uMM" id="mgI-av-fkf"/>
+                                            <outlet property="label" destination="0Fx-GN-Nmb" id="VXX-X9-tHM"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qL6-1M-QiW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KBv-4J-FPa" firstAttribute="trailing" secondItem="qL6-1M-QiW" secondAttribute="trailing" id="9Cm-fc-hq8"/>
+                            <constraint firstItem="KBv-4J-FPa" firstAttribute="leading" secondItem="qL6-1M-QiW" secondAttribute="leading" id="Fjn-Ol-eIX"/>
+                            <constraint firstItem="KBv-4J-FPa" firstAttribute="bottom" secondItem="qL6-1M-QiW" secondAttribute="bottom" id="KM9-n4-Mkk"/>
+                            <constraint firstItem="KBv-4J-FPa" firstAttribute="top" secondItem="qL6-1M-QiW" secondAttribute="top" id="ScP-xL-OkH"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="History" id="H3C-ul-wGG"/>
+                    <navigationItem key="navigationItem" title="My Plan" id="H3C-ul-wGG" userLabel="My Plan"/>
+                    <connections>
+                        <outlet property="tableView" destination="KBv-4J-FPa" id="Hm4-tx-0R2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QyC-6i-f3N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1089" y="709"/>
+            <point key="canvasLocation" x="1088.8" y="707.49625187406298"/>
         </scene>
-        <!--History-->
+        <!--My Plan-->
         <scene sceneID="VyA-zH-dYR">
             <objects>
-                <navigationController id="CPi-0p-VtI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="History" id="SQ7-W8-2nY"/>
+                <navigationController id="CPi-0p-VtI" userLabel="My Plan" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Plan" image="bookmark" catalog="system" id="SQ7-W8-2nY" userLabel="My Plan"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qjA-RV-IHR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -234,7 +287,7 @@
         <scene sceneID="eJ4-u3-DXU">
             <objects>
                 <navigationController id="DGg-41-DSK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Workouts" id="Y03-Gm-5La"/>
+                    <tabBarItem key="tabBarItem" title="Workouts" image="dumbbell" catalog="system" id="Y03-Gm-5La"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bQO-jy-g3J">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -249,6 +302,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bookmark" catalog="system" width="110" height="128"/>
+        <image name="dumbbell" catalog="system" width="128" height="72"/>
+        <image name="person" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
