@@ -33,7 +33,7 @@
 		F559349128BE455E0043B1CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F55934D628BF565F0043B1CD /* WorkoutsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WorkoutsViewController.swift; path = Controller/WorkoutsViewController.swift; sourceTree = "<group>"; };
 		F56CC83F298181A3003FAC1B /* Workout.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Workout.xcdatamodel; sourceTree = "<group>"; };
-		F56CC85729843D8B003FAC1B /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		F56CC85729843D8B003FAC1B /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DataManager.swift; path = Model/DataManager.swift; sourceTree = "<group>"; };
 		F5B16ADB28C9FE0600536B75 /* WorkoutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTableViewCell.swift; sourceTree = "<group>"; };
 		F5B16AE828CBD22700536B75 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = Delegates/SceneDelegate.swift; sourceTree = "<group>"; };
 		F5B16AEA28CBD23400536B75 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Delegates/AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		F5B5DA2F28C695C50092FD19 /* ExcercisesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExcercisesViewController.swift; path = Controller/ExcercisesViewController.swift; sourceTree = "<group>"; };
 		F5B5DA3328C7F51C0092FD19 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F5B5DA3628C8B1780092FD19 /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewCell.swift; sourceTree = "<group>"; };
-		F5FFC28829757A7600979D4E /* MyPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlanViewController.swift; sourceTree = "<group>"; };
+		F5FFC28829757A7600979D4E /* MyPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyPlanViewController.swift; path = Controller/MyPlanViewController.swift; sourceTree = "<group>"; };
 		F5FFC28A29757B8C00979D4E /* MyPlanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlanTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
