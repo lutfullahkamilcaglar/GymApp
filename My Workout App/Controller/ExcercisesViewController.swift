@@ -24,19 +24,14 @@ class ExcercisesViewController: UIViewController, UITableViewDelegate, UITableVi
         tableView.dataSource = self
         
     }
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        tableView.frame = view.bounds
-    }
+
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return excercises.count
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let index = indexPath.row
         
@@ -56,11 +51,23 @@ class ExcercisesViewController: UIViewController, UITableViewDelegate, UITableVi
         let add = UIContextualAction(style: .normal , title: "Add") {(action, view, completionHandler) in
             let index = indexPath.row
             let excercise = self.excercises[index]
-            // save exercises in row
-            let exercise = DataManager.shared.exercise(title: excercise.title, image: excercise.image)
-            self.workoutExercises.append(exercise)
-            DataManager.shared.save()
-            completionHandler(true)
+            // check if exercise already exists in the workoutExercises array
+            let existingExercise = self.workoutExercises.filter { $0.title == excercise.title }
+            
+            if existingExercise.count == 0 {
+                // save exercises in row
+                let exercise = DataManager.shared.exercise(title: excercise.title, image: excercise.image)
+                self.workoutExercises.append(exercise)
+                DataManager.shared.save()
+                completionHandler(true)
+            }else{
+                completionHandler(false)
+            }
+//            // save exercises in row
+//            let exercise = DataManager.shared.exercise(title: excercise.title, image: excercise.image)
+//            self.workoutExercises.append(exercise)
+//            DataManager.shared.save()
+            
         }
         add.image = UIImage(systemName: "plus.circle")
         add.backgroundColor = UIColor(named: "swipeColor")
@@ -69,16 +76,6 @@ class ExcercisesViewController: UIViewController, UITableViewDelegate, UITableVi
         let swipe = UISwipeActionsConfiguration(actions: [add])
         
         return swipe
-    }
-    
-    func addButton(indexPath: IndexPath) {
-        let index = indexPath.row
-        let excercise = self.excercises[index]
-        // save exercises in row
-        let exercise = DataManager.shared.exercise(title: excercise.title, image: excercise.image)
-        self.workoutExercises.append(exercise)
-        tableView.reloadData()
-        DataManager.shared.save()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

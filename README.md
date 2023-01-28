@@ -19,6 +19,7 @@ Code organization using MVC pattern.
 
  # Current Look
  
-https://user-images.githubusercontent.com/73592197/213555576-da7cbec1-5f75-41dd-9c71-8379390c7c9c.mp4
+
+https://user-images.githubusercontent.com/73592197/215276210-e2935d32-5007-4f45-bba7-485bfa77b0f1.mp4
 
 

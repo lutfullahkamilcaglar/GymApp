@@ -18,38 +18,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NE0-K0-Lhs">
-                                <rect key="frame" x="-20" y="4" width="433" height="844"/>
+                                <rect key="frame" x="-56.666666666666657" y="-24" width="506.33333333333326" height="900"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fearSetImage" translatesAutoresizingMaskIntoConstraints="NO" id="JjY-hh-uBk">
-                                        <rect key="frame" x="0.0" y="0.0" width="433" height="844"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="JjY-hh-uBk">
+                                        <rect key="frame" x="0.0" y="0.0" width="506.33333333333331" height="900"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="JjY-hh-uBk" firstAttribute="leading" secondItem="NE0-K0-Lhs" secondAttribute="leading" id="CwX-QQ-105"/>
-                                    <constraint firstAttribute="trailing" secondItem="JjY-hh-uBk" secondAttribute="trailing" id="DOl-sj-eAH"/>
-                                    <constraint firstAttribute="bottom" secondItem="JjY-hh-uBk" secondAttribute="bottom" id="JrF-cc-8Jw"/>
-                                    <constraint firstItem="JjY-hh-uBk" firstAttribute="top" secondItem="NE0-K0-Lhs" secondAttribute="top" id="cfs-w2-8xr"/>
+                                    <constraint firstItem="JjY-hh-uBk" firstAttribute="leading" secondItem="NE0-K0-Lhs" secondAttribute="leading" id="A4u-lr-Vzr"/>
+                                    <constraint firstAttribute="bottom" secondItem="JjY-hh-uBk" secondAttribute="bottom" id="kqQ-0d-cbu"/>
+                                    <constraint firstItem="JjY-hh-uBk" firstAttribute="top" secondItem="NE0-K0-Lhs" secondAttribute="top" id="qhs-5L-7oO"/>
+                                    <constraint firstAttribute="trailing" secondItem="JjY-hh-uBk" secondAttribute="trailing" id="rFc-bh-5kK"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="NE0-K0-Lhs" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="-55" id="IS2-dO-3OG"/>
-                            <constraint firstItem="NE0-K0-Lhs" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-36" id="LLe-Cb-2Br"/>
-                            <constraint firstItem="NE0-K0-Lhs" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="XFL-fK-Yzv"/>
-                            <constraint firstItem="NE0-K0-Lhs" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="h2F-SB-EpP"/>
+                            <constraint firstItem="NE0-K0-Lhs" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="fPs-YW-oZe"/>
+                            <constraint firstItem="NE0-K0-Lhs" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="vF6-mt-zrE"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+            <point key="canvasLocation" x="51.145038167938928" y="374.64788732394368"/>
         </scene>
     </scenes>
     <resources>
-        <image name="fearSetImage" width="1080" height="1920"/>
+        <image name="launchScreen" width="506" height="900"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
