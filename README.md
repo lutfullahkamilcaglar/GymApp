@@ -18,8 +18,9 @@ Organized display of exercises using TableView.
 Code organization using MVC pattern.
 
  # Current Look
- 
 
-https://user-images.githubusercontent.com/73592197/215276210-e2935d32-5007-4f45-bba7-485bfa77b0f1.mp4
+https://user-images.githubusercontent.com/73592197/215276998-5236e3e4-8926-4736-a00b-058b845cc394.mp4
+
+
 
 
